@@ -148,7 +148,7 @@ main {
 
 /* Navmenu.razor */
 
-.nav-link {
+.nav-link, .nav-link :hover, .nav-link.active {
     color: white;
 }
 

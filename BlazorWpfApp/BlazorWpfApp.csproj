@@ -15,7 +15,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="6.0.101-preview.10.2068" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RazorClassLibrary1\BlazorWpfApp.BlazorApp.csproj" />
+    <ProjectReference Include="..\BlazorWpfApp.BlazorApp\BlazorWpfApp.BlazorApp.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
