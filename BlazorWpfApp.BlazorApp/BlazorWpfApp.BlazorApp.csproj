@@ -8,14 +8,23 @@
     <IsPackable>false</IsPackable>
     <StaticWebAssetBasePath>/</StaticWebAssetBasePath>
     <StaticWebAssetProjectMode>Root</StaticWebAssetProjectMode>
+    <!--<CoreCompileDependsOn>$(CoreCompileDependsOn);StaticWebAssetsPrepareForRun</CoreCompileDependsOn>-->
   </PropertyGroup>
-
+  <!--<Target Name="AddStaticWebAssetsForClickOnce" AfterTargets="ComputeFilesToPublish" >
+    <ComputeStaticWebAssetsTargetPaths Assets="@(StaticWebAsset)" PathPrefix="wwwroot">
+      <Output TaskParameter="AssetsWithTargetPath" ItemName="_ClickOnceAssetCandidate" />
+    </ComputeStaticWebAssetsTargetPaths>
+    <ItemGroup>
+      <ContentWithTargetPath Include="@(_ClickOnceAssetCandidate)" KeepMetadata="TargetPath" />
+    </ItemGroup>
+  </Target>-->
   <ItemGroup>
     <SupportedPlatform Include="browser" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Abstractions" Version="6.0.0" />
   </ItemGroup>
 
   <ItemGroup>
