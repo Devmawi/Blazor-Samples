@@ -8,16 +8,16 @@
     <base href="/" />
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
-    <!--<link href="BlazorWpfApp.styles.css" rel="stylesheet" />-->
+    <!--<link href="BlazorWpfApp.BlazorApp.styles.css" rel="stylesheet" />-->
     <script>
         function showAlert() {
 
             DotNet
                 .invokeMethodAsync("BlazorWpfApp.BlazorApp", "ReturnArrayAsync")
-                    .then(res => {
-                        alert(`Hello from Blazor Component: ${JSON.stringify(res)}`)
-                    })
-           
+                .then(res => {
+                    alert(`Hello from Blazor Component: ${JSON.stringify(res)}`)
+                })
+
         }
     </script>
 </head>
