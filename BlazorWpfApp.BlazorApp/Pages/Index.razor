@@ -1,0 +1,21 @@
+﻿@page "/"
+@* NOTE: The full namespace is included here to work around this bug: https://github.com/dotnet/aspnetcore/issues/30851 *@
+@inject BlazorWpfApp.BlazorApp.AppState AppState 
+
+<h3>Hello, world!</h3>
+
+<p>The current count is <strong>@AppState.Counter</strong></p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Increment</button>
+
+<p>This is a shared component</p>
+
+@code {
+    public int Counter { get; set; } = 1;
+
+
+    void IncrementCount()
+    {
+        AppState.Counter++;
+    }
+}
