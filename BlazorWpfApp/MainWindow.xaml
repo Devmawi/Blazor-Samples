@@ -8,11 +8,13 @@
         xmlns:blazor="clr-namespace:Microsoft.AspNetCore.Components.WebView.Wpf;assembly=Microsoft.AspNetCore.Components.WebView.Wpf"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <blazor:BlazorWebView HostPage="wwwroot\index.html" Services="{StaticResource services1}" x:Name="blazorWebView1">
+    <DockPanel>
+        <Button DockPanel.Dock="Top" Content="Show counter" Click="Button_Click_1"></Button>
+        <Button DockPanel.Dock="Top" Content="Webview alert" Click="Button_Click"></Button>
+        <blazor:BlazorWebView HostPage="wwwroot\index.html" Services="{StaticResource services1}" x:Name="blazorWebView1" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
             <blazor:BlazorWebView.RootComponents>
                 <blazor:RootComponent Selector="#app" ComponentType="{x:Type rcl:Main}" />
             </blazor:BlazorWebView.RootComponents>
         </blazor:BlazorWebView>
-    </Grid>
+    </DockPanel>
 </Window>

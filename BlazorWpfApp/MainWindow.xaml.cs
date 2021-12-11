@@ -32,6 +32,19 @@ namespace BlazorWpfApp
 
             InitializeComponent();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(
+              owner: this,
+              messageBoxText: $"Current counter value is: {_appState.Counter}",
+              caption: "Counter");
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            blazorWebView1.WebView.CoreWebView2.ExecuteScriptAsync("showAlert()");
+        }
     }
 
   
