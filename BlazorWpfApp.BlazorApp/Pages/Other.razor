@@ -1,7 +1,35 @@
 ﻿@page "/other"
-
+@using BlazorWpfApp.BlazorApp.Data
+@inject ApplicationContext ApplicationContext
 <h3>Other</h3>
-
+<div>
+    <button @onclick="AddCounter">Counter +</button>
+    <button @onclick="RemoveCounter">Counter -</button>
+</div>
+<div>
+    <ul>
+         @foreach (var c in ApplicationContext.Counters)
+        {
+        <li>@c.Id, @c.Value, @c.CreatedAt</li>
+        }
+    </ul>
+   
+</div>
 @code {
+    public Random Random { get; set; } = new();
 
+    public void AddCounter()
+    {
+        ApplicationContext.Counters.Add(new Models.Counter()
+            {
+                Value = Random.Next(0, 100)
+            });
+        ApplicationContext.SaveChanges();
+    }
+
+    public void RemoveCounter()
+    {
+        ApplicationContext.Counters.Remove(ApplicationContext.Counters.First());
+        ApplicationContext.SaveChanges();
+    }
 }

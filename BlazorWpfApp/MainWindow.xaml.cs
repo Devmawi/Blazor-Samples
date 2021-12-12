@@ -1,4 +1,6 @@
 ﻿using BlazorWpfApp.BlazorApp;
+using BlazorWpfApp.BlazorApp.Data;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -28,7 +30,13 @@ namespace BlazorWpfApp
             var services1 = new ServiceCollection();
             services1.AddBlazorWebView();          
             services1.AddSingleton<AppState>(_appState);
-            Resources.Add("services1", services1.BuildServiceProvider());
+            services1.AddDbContext<ApplicationContext>(options =>
+               options.UseSqlite("Data Source=BlazorWpfApp.db;"));
+            var serviceProvider = services1.BuildServiceProvider();
+            using var context = serviceProvider.GetRequiredService<ApplicationContext>();
+            context.Database.EnsureCreated();
+
+            Resources.Add("services1", serviceProvider);
 
             InitializeComponent();
         }
