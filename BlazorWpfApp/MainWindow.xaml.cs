@@ -28,7 +28,7 @@ namespace BlazorWpfApp
         public MainWindow()
         {
             var services1 = new ServiceCollection();
-            services1.AddBlazorWebView();          
+            services1.AddBlazorWebView();
             services1.AddSingleton<AppState>(_appState);
             services1.AddDbContext<ApplicationContext>(options =>
                options.UseSqlite("Data Source=BlazorWpfApp.db;"));
