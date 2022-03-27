@@ -19,7 +19,7 @@ namespace BlazorWinFormsApp
             serviceCollection.AddScoped(sp => new HttpClient { BaseAddress = new Uri("") });
 
             //#if DEBUG
-            //            services1.AddBlazorWebViewDeveloperTools();
+            //            serviceCollection.AddBlazorWebViewDeveloperTools(); // Comes later: https://github.com/dotnet/maui/commit/cfc3fab4b07db3c5aeabf20819efc7b140144215
             //#endif
             //            var services2 = new ServiceCollection();
             //            services2.AddWindowsFormsBlazorWebView();
