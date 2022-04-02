@@ -102,6 +102,7 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Update-Version.ps1" />
     <None Include="BlazorWinFormsApp.Setup_TemporaryKey.pfx" />
     <Content Include="BlazorWinFormsApp.Setup.appinstaller" />
     <Content Include="Images\SplashScreen.scale-200.png" />
