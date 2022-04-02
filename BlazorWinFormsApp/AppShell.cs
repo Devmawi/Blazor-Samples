@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Components.WebView.WindowsForms;
 using BlazorWinFormsApp.BlazorApp;
 using Microsoft.Web.WebView2.Core;
 using Microsoft.Web.WebView2.WinForms;
+using System.Diagnostics;
 
 namespace BlazorWinFormsApp
 {
@@ -42,7 +43,17 @@ namespace BlazorWinFormsApp
             Directory.CreateDirectory(userData);
             //MessageBox.Show(userData);
             mainBlazorWebView.WebView.CreationProperties = creationProperties;
+            mainBlazorWebView.WebView.CoreWebView2InitializationCompleted += WebView_CoreWebView2InitializationCompleted;
         }
-       
+
+        private void WebView_CoreWebView2InitializationCompleted(object? sender, CoreWebView2InitializationCompletedEventArgs e)
+        {
+            Debug.Print(mainBlazorWebView.WebView.CreationProperties.BrowserExecutableFolder);
+        }
+
+        private void AppShell_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

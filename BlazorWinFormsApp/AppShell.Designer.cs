@@ -48,6 +48,7 @@
             this.Controls.Add(this.mainBlazorWebView);
             this.Name = "AppShell";
             this.Text = "App Shell";
+            this.Load += new System.EventHandler(this.AppShell_Load);
             this.ResumeLayout(false);
 
         }

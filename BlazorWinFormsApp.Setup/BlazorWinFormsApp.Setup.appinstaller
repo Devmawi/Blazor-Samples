@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppInstaller
+	Uri="file:///D:/tmp/.NET/Blazor-Samples/BlazorWinFormsApp.Setup/AppPackages/Updates/BlazorWinFormsApp.Setup.appinstaller"
+	Version="1.0.5.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
+	<MainBundle
+		Name="7da352f2-b85e-486d-b826-e1d1be2cb94e"
+		Version="1.0.5.0"
+		Publisher="CN=Dev"
+		Uri="file:///D:/tmp/.NET/Blazor-Samples/BlazorWinFormsApp.Setup/AppPackages/Updates/BlazorWinFormsApp.Setup_1.0.5.0_Debug_Test/BlazorWinFormsApp.Setup_1.0.5.0_AnyCPU_Debug.msixbundle" />
+	<UpdateSettings>
+    <!--https://docs.microsoft.com/en-us/uwp/schemas/appinstallerschema/element-onlaunch-->
+		<!--https://docs.microsoft.com/en-us/windows/msix/app-installer/update-settings-->
+    <OnLaunch
+			ShowPrompt="true" UpdateBlocksActivation="true"
+			HoursBetweenUpdateChecks="0" />
+	</UpdateSettings>
+</AppInstaller>

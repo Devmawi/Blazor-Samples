@@ -9,12 +9,13 @@
   <Identity
     Name="7da352f2-b85e-486d-b826-e1d1be2cb94e"
     Publisher="CN=Dev"
-    Version="1.0.0.0" />
+    Version="1.0.12.0" />
 
   <Properties>
     <DisplayName>BlazorWinFormsApp.Setup</DisplayName>
     <PublisherDisplayName>Dev</PublisherDisplayName>
     <Logo>Images\StoreLogo.png</Logo>
+    
   </Properties>
 
   <Dependencies>
@@ -39,10 +40,12 @@
         <uap:DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png" />
         <uap:SplashScreen Image="Images\SplashScreen.png" />
       </uap:VisualElements>
+      
     </Application>
   </Applications>
 
   <Capabilities>
+    
     <Capability Name="internetClient" />
     <rescap:Capability Name="runFullTrust" />
   </Capabilities>
