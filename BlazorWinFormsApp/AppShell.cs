@@ -40,7 +40,7 @@ namespace BlazorWinFormsApp
                 UserDataFolder = userData
             };
             Directory.CreateDirectory(userData);
-            MessageBox.Show(userData);
+            //MessageBox.Show(userData);
             mainBlazorWebView.WebView.CreationProperties = creationProperties;
         }
        
