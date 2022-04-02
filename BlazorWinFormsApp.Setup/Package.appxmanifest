@@ -49,4 +49,5 @@
     <Capability Name="internetClient" />
     <rescap:Capability Name="runFullTrust" />
   </Capabilities>
+  <!--https://docs.microsoft.com/en-us/windows/msix/app-installer/how-to-embed-an-appinstaller-file-->
 </Package>
