@@ -13,8 +13,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWinFormsApp.BlazorApp
 EndProject
 Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "BlazorWinFormsApp.Setup", "BlazorWinFormsApp.Setup\BlazorWinFormsApp.Setup.wapproj", "{F26A10D1-41E1-49B8-83C7-06169538BBB3}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BlazorWinFormsApp.Installer", "BlazorWinFormsApp.Installer\BlazorWinFormsApp.Installer.vdproj", "{33D438EC-9275-472B-814C-B618207420BB}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -139,16 +137,6 @@ Global
 		{F26A10D1-41E1-49B8-83C7-06169538BBB3}.Release|x86.ActiveCfg = Release|x86
 		{F26A10D1-41E1-49B8-83C7-06169538BBB3}.Release|x86.Build.0 = Release|x86
 		{F26A10D1-41E1-49B8-83C7-06169538BBB3}.Release|x86.Deploy.0 = Release|x86
-		{33D438EC-9275-472B-814C-B618207420BB}.Debug|Any CPU.ActiveCfg = Debug
-		{33D438EC-9275-472B-814C-B618207420BB}.Debug|ARM.ActiveCfg = Debug
-		{33D438EC-9275-472B-814C-B618207420BB}.Debug|ARM64.ActiveCfg = Debug
-		{33D438EC-9275-472B-814C-B618207420BB}.Debug|x64.ActiveCfg = Debug
-		{33D438EC-9275-472B-814C-B618207420BB}.Debug|x86.ActiveCfg = Debug
-		{33D438EC-9275-472B-814C-B618207420BB}.Release|Any CPU.ActiveCfg = Release
-		{33D438EC-9275-472B-814C-B618207420BB}.Release|ARM.ActiveCfg = Release
-		{33D438EC-9275-472B-814C-B618207420BB}.Release|ARM64.ActiveCfg = Release
-		{33D438EC-9275-472B-814C-B618207420BB}.Release|x64.ActiveCfg = Release
-		{33D438EC-9275-472B-814C-B618207420BB}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
