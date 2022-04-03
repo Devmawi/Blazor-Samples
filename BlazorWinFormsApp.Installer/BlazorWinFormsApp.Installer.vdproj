@@ -15,12 +15,6 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_76CDF6E276D64D379C70EE841D1F114C"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_7F1A23891DF149E3B9D9EB9D99A6C63A"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -190,7 +184,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:BlazorWinFormsApp.Installer"
         "ProductCode" = "8:{EC90611E-4BE6-4DCD-B770-C998E145D7ED}"
-        "PackageCode" = "8:{84C23A51-DC97-42DB-8004-6E28734120B9}"
+        "PackageCode" = "8:{2DEE5B7C-1F90-4D9A-AADF-F8DF4406255F}"
         "UpgradeCode" = "8:{2E6CE633-2779-4E79-80D4-C1172A127D5D}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -310,9 +304,9 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_8FBB463128254A13ADDAB87CF46EFD1C"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_D558909D33C34BF7B9D587339DACDD73"
             {
-            "Name" = "8:BlazorWinFormsApp (Active)"
+            "Name" = "8:BlazorWinFormsApp"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
@@ -751,66 +745,9 @@
                 {
                 }
             }
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_3FC698B0D5A24DA5909B3517472321B5"
-            {
-            "SourcePath" = "8:"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_D0D5F133FB8A4B61BEDC8A74EC2155C9"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:"
-            "OutputGroupCanonicalName" = "8:ContentFiles"
-            "OutputProjectGuid" = "8:{47B54F16-E33B-4622-9CAD-56BE857FB643}"
-            "ShowKeyOutput" = "11:TRUE"
-                "ExcludeFilters"
-                {
-                "ExcludeFilter" = "8:*.razor"
-                }
-            }
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_76CDF6E276D64D379C70EE841D1F114C"
-            {
-            "SourcePath" = "8:..\\BlazorWinFormsApp\\obj\\Release\\net6.0-windows\\BlazorWinFormsApp.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_D0D5F133FB8A4B61BEDC8A74EC2155C9"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:"
-            "OutputGroupCanonicalName" = "8:Built"
-            "OutputProjectGuid" = "8:{C09718C8-202A-4154-975F-480E377E28D2}"
-            "ShowKeyOutput" = "11:TRUE"
-                "ExcludeFilters"
-                {
-                }
-            }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_7F1A23891DF149E3B9D9EB9D99A6C63A"
             {
-            "SourcePath" = "8:..\\BlazorWinFormsApp\\obj\\Release\\net6.0-windows\\apphost.exe"
+            "SourcePath" = "8:..\\BlazorWinFormsApp\\obj\\Release\\net6.0-windows\\win-x86\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_D0D5F133FB8A4B61BEDC8A74EC2155C9"
@@ -832,6 +769,7 @@
             "OutputGroupCanonicalName" = "8:PublishItems"
             "OutputProjectGuid" = "8:{C09718C8-202A-4154-975F-480E377E28D2}"
             "ShowKeyOutput" = "11:TRUE"
+            "PublishProfilePath" = "8:Properties\\PublishProfiles\\FolderProfile.pubxml"
                 "ExcludeFilters"
                 {
                 }
