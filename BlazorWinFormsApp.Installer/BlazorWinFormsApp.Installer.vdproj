@@ -15,7 +15,13 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_F0290632A0C147CE9DEB4AEAAFFC57C8"
+        "MsmKey" = "8:_76CDF6E276D64D379C70EE841D1F114C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7F1A23891DF149E3B9D9EB9D99A6C63A"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -37,6 +43,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -53,6 +75,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -111,6 +149,17 @@
             "Property" = "8:TARGETDIR"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_997AB300CD88423E83575F6F42A64024"
+                    {
+                    "Name" = "8:BlazorWinFormsApp.exe.WebView2"
+                    "AlwaysCreate" = "11:TRUE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_9D330074BA07466480EB1394A04DDD64"
+                        "Folders"
+                        {
+                        }
+                    }
                 }
             }
             "{1525181F-901A-416C-8A58-119130FE478E}:_E40CB52406344D8F82FF13120EFF2F5C"
@@ -141,7 +190,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:BlazorWinFormsApp.Installer"
         "ProductCode" = "8:{EC90611E-4BE6-4DCD-B770-C998E145D7ED}"
-        "PackageCode" = "8:{32E9B1CA-ACF4-483A-9B40-3E655A9A5B70}"
+        "PackageCode" = "8:{84C23A51-DC97-42DB-8004-6E28734120B9}"
         "UpgradeCode" = "8:{2E6CE633-2779-4E79-80D4-C1172A127D5D}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -261,6 +310,20 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_8FBB463128254A13ADDAB87CF46EFD1C"
+            {
+            "Name" = "8:BlazorWinFormsApp (Active)"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_7F1A23891DF149E3B9D9EB9D99A6C63A"
+            "Folder" = "8:_60E47BF2885440C6B73C070894156C42"
+            "WorkingFolder" = "8:_D0D5F133FB8A4B61BEDC8A74EC2155C9"
+            "Icon" = "8:"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {
@@ -660,7 +723,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_AEDBD4291B0945F4979A432071AB5781"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_267C2EF10B8F422284862B0A5CC4E6A7"
             {
             "SourcePath" = "8:"
             "TargetName" = "8:"
@@ -682,15 +745,72 @@
             "ProjectOutputGroupRegister" = "3:1"
             "OutputConfiguration" = "8:"
             "OutputGroupCanonicalName" = "8:ContentFiles"
+            "OutputProjectGuid" = "8:{BBEAD54D-3590-4B5C-9256-88877967E4BD}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_3FC698B0D5A24DA5909B3517472321B5"
+            {
+            "SourcePath" = "8:"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_D0D5F133FB8A4B61BEDC8A74EC2155C9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:ContentFiles"
+            "OutputProjectGuid" = "8:{47B54F16-E33B-4622-9CAD-56BE857FB643}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                "ExcludeFilter" = "8:*.razor"
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_76CDF6E276D64D379C70EE841D1F114C"
+            {
+            "SourcePath" = "8:..\\BlazorWinFormsApp\\obj\\Release\\net6.0-windows\\BlazorWinFormsApp.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_D0D5F133FB8A4B61BEDC8A74EC2155C9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:Built"
             "OutputProjectGuid" = "8:{C09718C8-202A-4154-975F-480E377E28D2}"
             "ShowKeyOutput" = "11:TRUE"
                 "ExcludeFilters"
                 {
                 }
             }
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_F0290632A0C147CE9DEB4AEAAFFC57C8"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_7F1A23891DF149E3B9D9EB9D99A6C63A"
             {
-            "SourcePath" = "8:..\\BlazorWinFormsApp\\obj\\Debug\\net6.0-windows\\apphost.exe"
+            "SourcePath" = "8:..\\BlazorWinFormsApp\\obj\\Release\\net6.0-windows\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_D0D5F133FB8A4B61BEDC8A74EC2155C9"

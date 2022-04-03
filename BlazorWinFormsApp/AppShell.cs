@@ -35,13 +35,14 @@ namespace BlazorWinFormsApp
             mainBlazorWebView.RootComponents.Add<App>("#app");
 
             // See also https://github.com/dotnet/maui/issues/3861
-            var userData = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "BlazorWinFormsApp");
+            var userData = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), "BlazorWinFormsApp");
             var creationProperties = new CoreWebView2CreationProperties()
             {
                 UserDataFolder = userData
             };
             Directory.CreateDirectory(userData);
             //MessageBox.Show(userData);
+            //mainBlazorWebView.WebView.CoreWebView2.Settings.
             mainBlazorWebView.WebView.CreationProperties = creationProperties;
             mainBlazorWebView.WebView.CoreWebView2InitializationCompleted += WebView_CoreWebView2InitializationCompleted;
         }

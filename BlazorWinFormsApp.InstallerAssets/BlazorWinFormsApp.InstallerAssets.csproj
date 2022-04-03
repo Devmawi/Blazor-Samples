@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="..\BlazorWinFormsApp\bin\Release\net6.0-windows\BlazorWinFormsApp.BlazorApp.staticwebassets.runtime.json" Link="BlazorWinFormsApp.BlazorApp.staticwebassets.runtime.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\BlazorWinFormsApp\bin\Release\net6.0-windows\BlazorWinFormsApp.staticwebassets.runtime.json" Link="BlazorWinFormsApp.staticwebassets.runtime.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
