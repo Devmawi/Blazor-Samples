@@ -18,7 +18,7 @@ namespace BlazorWinFormsApp
         public void InitializeBlazorWebView() {
             
             var serviceCollection = new ServiceCollection();
-            serviceCollection.AddBlazorWebView();
+            serviceCollection.AddWindowsFormsBlazorWebView();
             serviceCollection.AddScoped(sp => new HttpClient { BaseAddress = new Uri("") });
 
             //#if DEBUG
@@ -36,7 +36,7 @@ namespace BlazorWinFormsApp
 
             // See also https://github.com/dotnet/maui/issues/3861
             var userData = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), "BlazorWinFormsApp");
-            Directory.CreateDirectory(userData);
+            //Directory.CreateDirectory(userData);
             var creationProperties = new CoreWebView2CreationProperties()
             {
                 UserDataFolder = userData
